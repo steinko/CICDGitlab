@@ -1,0 +1,24 @@
+image: docker:latest
+services:
+  - docker:dind
+
+stages:
+  - build
+  - package
+  - deploy
+
+build:
+  image: gradle:latest
+  stage: build
+  script:
+    - gradle build
+  artifacts:
+    paths:
+      - app/build/libs/app.jar
+
+package:
+  stage: package
+  script:
+    - docker build -t steinko/ci-cd-gitlab .
+    - docker login -u steinko -p RoxyMusic11
+    - docker push steinko/ci-cd-gitlab
