@@ -24,7 +24,7 @@ package:
     - docker login -u steinko -p RoxyMusic11
     - docker push steinko/ci-cd-gitlab
 
-pulumi:
+infrastructure-update:
   stage: infrastructure-update
   before_script:
     - chmod +x ./scripts/*.sh
