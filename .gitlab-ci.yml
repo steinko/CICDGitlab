@@ -5,7 +5,6 @@ services:
 stages:
   - build
   - package
-  - infrastructure-update
   - deploy
 
 build:
@@ -24,7 +23,7 @@ package:
     - docker login -u steinko -p RoxyMusic11
     - docker push steinko/ci-cd-gitlab
 
-infrastructure-update:
+deploy:
   stage: deploy
   before_script:
     - chmod +x ./scripts/*.sh
