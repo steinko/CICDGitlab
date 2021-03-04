@@ -25,7 +25,7 @@ package:
     - docker push steinko/ci-cd-gitlab
 
 infrastructure-update:
-  stage: infrastructure-update
+  stage: deploy
   before_script:
     - chmod +x ./scripts/*.sh
     - ./infAsCode/scripts/setup.sh
