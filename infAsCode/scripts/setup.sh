@@ -8,11 +8,9 @@ curl -fsSL https://get.pulumi.com/ | bash
 export PATH=$PATH:$HOME/.pulumi/bin
 # Login into pulumi. This will require the PULUMI_ACCESS_TOKEN environment variable
 pulumi login
-# update the GitLab Runner's packages
-apt-get update -y
-apt-get install sudo -y
+
 # nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-apt-get install -y nodejs
+apk add nodejs
 # yarn
 npm i -g yarn
