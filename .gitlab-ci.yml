@@ -30,6 +30,8 @@ deploy:
     - apk update
     - apk add bash
     - apk add curl
+    - curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+    - brew install apt-get
     - ./infAsCode/scripts/setup.sh
   script:
     - ./infAsCode/scripts/run-pulumi.sh
