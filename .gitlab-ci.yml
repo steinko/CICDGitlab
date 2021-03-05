@@ -27,6 +27,8 @@ deploy:
   stage: deploy
   before_script:
     - chmod +x ./infAsCode/scripts/*.sh
+    - apk update
+    - apk add bash
     - ./infAsCode/scripts/setup.sh
   script:
     - ./infAsCode/scripts/run-pulumi.sh
