@@ -30,7 +30,7 @@ deploy:
     - apk update
     - apk add bash
     - apk add curl
-    - apg add apt-get
+    - apk add apt-get
     - ./infAsCode/scripts/setup.sh
   script:
     - ./infAsCode/scripts/run-pulumi.sh
