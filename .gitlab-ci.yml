@@ -29,6 +29,7 @@ deploy:
     - chmod +x ./infAsCode/scripts/*.sh
     - apk update
     - apk add bash
+    - apk add curl
     - ./infAsCode/scripts/setup.sh
   script:
     - ./infAsCode/scripts/run-pulumi.sh
