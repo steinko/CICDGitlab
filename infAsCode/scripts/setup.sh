@@ -10,7 +10,7 @@ export PATH=$PATH:$HOME/.pulumi/bin
 pulumi login
 
 # nodejs
-curl -sL https://deb.nodesource.com/setup_15.x| bash
+curl -sL https://deb.nodesource.com/setup_15.x| bash -
 apk add nodejs
 # yarn
 npm i -g yarn
