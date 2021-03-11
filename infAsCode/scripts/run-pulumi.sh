@@ -7,5 +7,6 @@ set -e -x
 export PATH=$PATH:$HOME/.pulumi/bin
 
 yarn install
+cd ..
 pulumi stack select dev
 pulumi up --yes
