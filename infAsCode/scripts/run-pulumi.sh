@@ -6,7 +6,7 @@ set -e -x
 # Add the pulumi CLI to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
 
-yarn install
 cd ..
+npm install
 pulumi stack select dev
 pulumi up --yes
