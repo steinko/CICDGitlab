@@ -6,7 +6,7 @@ set -e -x
 # Add the pulumi CLI to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
 
-cd ..
+cd infAsCode
 pwd
 npm install
 pulumi stack select dev
