@@ -12,5 +12,6 @@ pulumi login
 
 # nodejs
 apk add nodejs
+curl -qL https://www.npmjs.com/install.sh | sh
 # yarn
 npm i -g yarn
