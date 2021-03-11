@@ -7,6 +7,7 @@ set -e -x
 export PATH=$PATH:$HOME/.pulumi/bin
 
 cd ..
+Pwd
 npm install
 pulumi stack select dev
 pulumi up --yes
