@@ -1,0 +1,7 @@
+config:
+  infAsCode:cloudLocation: europe-rorth-1a
+  infAsCode:cloudProject: SpringBoot22
+  infAsCode:cloudRegion: europe-north-1
+  infAsCode:dockerPassword:
+    secure: AAABAB5DDqjq4ZRSvAFdRPZwvjTtcoDLOmfmxuQNHPcclmTujgrzRg9mWw==
+  infAsCode:dockerUserName: steinko

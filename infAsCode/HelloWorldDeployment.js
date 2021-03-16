@@ -1,4 +1,5 @@
-let k8s = require('@pulumi/kubernetes')
+import * as k8s from '@pulumi/kubernetes'
+import * as clusterProvider from './cluster'
 
 module.export = helloWorldDeployment = 
                new k8s.apps.v1.Deployment('hello-world-deployment', {
@@ -19,4 +20,4 @@ module.export = helloWorldDeployment =
                                                 }    
                                         },
                            }
-                  })
+                  },{provider: clusterProvider})
